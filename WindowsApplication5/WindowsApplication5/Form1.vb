@@ -17,6 +17,7 @@ Public Class Form1
         Dim i As Integer = 0
         con.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Exfilepath + ";Extended Properties=""Excel 12.0;HDR=No"""
         ListView1.Items.Clear()
+        'fucking bitch
         con.Open()
         ds.Tables.Add(dt)
         da.Fill(dt)
